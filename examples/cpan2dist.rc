@@ -1,0 +1,7 @@
+<CPANPLUS::Dist::MyPerl2OBS>
+	PKG_NAMESPACE=my-perl-
+	PKG_DEPS_NS=myPerl
+	PERL_PACKAGE=my-perl
+	REPO_URL=https://download.opensuse.org/home:/M0ses:/Perl/SLE_11_SP2/
+	REPO_URL=https://download.opensuse.org/home:/M0ses/SLE_11_SP2/
+</CPANPLUS::Dist::MyPerl2OBS>
