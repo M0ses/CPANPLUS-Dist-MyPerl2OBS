@@ -52,7 +52,7 @@ CPANPLUS::Dist::MyPerl2OBS - To build your own perl distribution modules
 
 =cut
 
-our $VERSION = '0.000100';
+our $VERSION = '0.000101';
 
 Readonly my $RPMDIR => do { chomp(my $d=qx[ rpm --eval %_topdir ]); $d; };
 Readonly my $PACKAGER =>
@@ -695,6 +695,90 @@ sub _docfiles {
 
 1;
 
+=head1 REFERENCES
+
+L<http://wiki.opensuse.org/openSUSE:Packaging_Perl>
+
+=head1 AUTHORS
+
+M0ses C<< <m0ses plus cpan at samaxi.de> >>
+
+Original source taken from CPANPLUS::Dist::SUSE
+
+Author:
+
+Qindel Formacion y Servicios, SL, C<< <Nito at Qindel.ES> >>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to C<bug-cpanplus-dist-rpm-myperl2obs at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CPANPLUS-Dist-MyPerl2OBS>.  I will be notified, and then you'll
+automatically be notified of progress on your bug as I make changes.
+
+
+
+
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc CPANPLUS::Dist::MyPerl2OBS
+
+
+You can also look for information at:
+
+=over 4
+
+=item * RT: CPAN's request tracker
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPANPLUS-Dist-MyPerl2OBS>
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/CPANPLUS-Dist-MyPerl2OBS>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/CPANPLUS-Dist-MyPerl2OBS>
+
+=item * Search CPAN
+
+L<http://search.cpan.org/dist/CPANPLUS-Dist-MyPerl2OBS/>
+
+=back
+
+
+=head1 ACKNOWLEDGEMENTS
+
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 2012 M0ses
+
+Copyright 2010 Qindel Formacion y Servicios, SL.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+
+=head1 SPONSORS
+
+2013 IsarNet Software Solutions GmbH http://www.isarnet.de
+
+=head1 TODO
+
+=over 1
+
+=item * make specfile template configurable
+
+=item * make options in cpan2dist.rc configurable on commandline
+
+=item * make rcfile configurable
+
+=cut
+
 __DATA__
 __[ spec ]__
 #
@@ -810,89 +894,5 @@ __[ _service ]__
 __[ pod ]__
 
 __END__
-
-=head1 REFERENCES
-
-L<http://wiki.opensuse.org/openSUSE:Packaging_Perl>
-
-=head1 AUTHORS
-
-M0ses C<< <m0ses plus cpan at samaxi.de> >>
-
-Original source taken from CPANPLUS::Dist::SUSE
-
-Author:
-
-Qindel Formacion y Servicios, SL, C<< <Nito at Qindel.ES> >>
-
-=head1 BUGS
-
-Please report any bugs or feature requests to C<bug-cpanplus-dist-rpm-myperl2obs at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CPANPLUS-Dist-MyPerl2OBS>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
-
-
-
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc CPANPLUS::Dist::MyPerl2OBS
-
-
-You can also look for information at:
-
-=over 4
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=CPANPLUS-Dist-MyPerl2OBS>
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/CPANPLUS-Dist-MyPerl2OBS>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/CPANPLUS-Dist-MyPerl2OBS>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/CPANPLUS-Dist-MyPerl2OBS/>
-
-=back
-
-
-=head1 ACKNOWLEDGEMENTS
-
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2012 M0ses
-
-Copyright 2010 Qindel Formacion y Servicios, SL.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
-
-See http://dev.perl.org/licenses/ for more information.
-
-=head1 SPONSORS
-
-2013 IsarNet Software Solutions GmbH http://www.isarnet.de
-
-=head1 TODO
-
-=over 1
-
-=item * make specfile template configurable
-
-=item * make options in cpan2dist.rc configurable on commandline
-
-=item * make rcfile configurable
-
-=cut
 
 1; # End of CPANPLUS::Dist::MyPerl2OBS

@@ -1,6 +1,9 @@
+*.tar.gz
 Build
 MYMETA.json
 MYMETA.yml
+META.json
+META.yml
+Makefile.PL
 _build/
 blib/
-*~
